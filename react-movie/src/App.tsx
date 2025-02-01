@@ -1,18 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import AppRoutes from "./route/route";
 
-function App() {
-  const [count, setCount] = useState(0)
+const queryClient = new QueryClient();
 
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-    </>
-  )
-}
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <AppRoutes />
+  </QueryClientProvider>
+);
 
-export default App
+export default App;
