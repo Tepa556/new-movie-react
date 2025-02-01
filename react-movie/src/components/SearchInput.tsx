@@ -18,7 +18,7 @@ export const SearchInput = ({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="search-input pl-10"
+        className="search-input pl-10 w-96 border rounded-lg font-bold"
       />
       <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
     </div>

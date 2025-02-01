@@ -21,10 +21,10 @@ const Main = () => {
         <h1 className="text-2xl font-bold">Поиск фильмов</h1>
         <Link 
           to="/liked" 
-          className="flex items-center gap-2 rounded-lg border border-gray-600 px-4 py-2 hover:bg-gray-800"
+          className="flex items-center gap-2 rounded-lg border border-gray-600 px-4 py-2 hover:bg-red-600 hover:text-white"
         >
           <Favorite />
-          <span>Любимые фильмы</span>
+          <span className='font-bold'>Любимые фильмы</span>
         </Link>
       </div>
 

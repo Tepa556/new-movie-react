@@ -27,7 +27,7 @@ const LikedMovies = () => {
       <div className="mb-8 flex items-center gap-4">
         <Link 
           to="/" 
-          className="flex h-10 w-10 items-center justify-center rounded-lg border border-gray-600 hover:bg-gray-800"
+          className="flex h-10 w-10 items-center justify-center rounded-lg border border-gray-600  hover:bg-red-600 hover:text-white"
         >
           <ArrowBack />
         </Link>

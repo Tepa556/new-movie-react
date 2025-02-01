@@ -42,7 +42,7 @@ const MovieDetails = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center text-gray-400 hover:text-white">
+        <Link to="/" className="flex items-center text-black-400 hover:text-gray-400">
           <ArrowLeft className="mr-2" />
           Вернуться к поиску
         </Link>
@@ -71,12 +71,12 @@ const MovieDetails = () => {
           </div>
           <div className="mb-6">
             <h2 className="mb-2 text-2xl font-semibold">Сюжет</h2>
-            <p className="text-gray-300">{movie.Plot}</p>
+            <p className="text-black">{movie.Plot}</p>
           </div>
           <div className="space-y-2 text-gray-300">
-            <p><span className="font-semibold text-gray-400">Режиссер:</span> {movie.Director}</p>
-            <p><span className="font-semibold text-gray-400">Актеры:</span> {movie.Actors}</p>
-            <p><span className="font-semibold text-gray-400">Рейтинг:</span> {movie.imdbRating}</p>
+            <p><span className="font-semibold text-black">Режиссер:</span> {movie.Director}</p>
+            <p><span className="font-semibold text-black">Актеры:</span> {movie.Actors}</p>
+            <p><span className="font-semibold text-black">Рейтинг:</span> {movie.imdbRating}</p>
           </div>
         </div>
       </div>
